@@ -42,6 +42,8 @@ body{
 /* #The length and height of the cards & The pointer style */
 .cards .card{
     cursor: all-scroll;
+    position: relative;
+    perspective: 800px;
     transform-style: preserve-3d;
     height: calc(100% / 4 - 10px);
     width: calc(100% / 4 - 10px);
@@ -51,7 +53,7 @@ body{
 .cards .card .view{
     width: 100%;
     height: 100%;
-    
+    position: absolute;
     background: pink;
     border-radius: 7px;
     box-shadow: 0 3px 10px rgb(3, 21, 2);
